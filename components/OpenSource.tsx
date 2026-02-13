@@ -40,7 +40,7 @@ const OpenSource: React.FC = () => {
            </div>
            
            <p className="text-[#f5f5f7] mb-6 text-sm leading-relaxed font-medium">
-             A teljes Python forráskód, beleértve a PID szabályzókat, az odometria számításokat és a küldetés-specifikus szekvenciákat.
+             A teljes Python forráskód, beleértve a menü- és programválasztó modult, a színszenzor-kalibráló rutint, az akkumulátor-ellenőrző kódokat és a küldetés-specifikus szekvenciákat.
            </p>
 
            <div className="flex items-center gap-6 text-sm text-[#86868b] pt-4 border-t border-gray-700">

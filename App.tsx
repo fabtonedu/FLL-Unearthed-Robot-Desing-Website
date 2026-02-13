@@ -5,6 +5,7 @@ import EngineeringProcess from './components/EngineeringProcess';
 import RobotSpecs from './components/RobotSpecs';
 import Instructions from './components/Instructions';
 import CodeDeepDive from './components/CodeDeepDive';
+import PIDControlSection from './components/PIDControlSection';
 import Strategy from './components/Strategy';
 import DevelopmentApproach from './components/DevelopmentApproach';
 import RobotInAction from './components/RobotInAction';
@@ -18,15 +19,16 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
-        <EngineeringProcess />
-        <RobotSpecs />
-        <Instructions />
-        <CodeDeepDive />
-        <Strategy />
         <DevelopmentApproach />
-        <RobotInAction />
+        <RobotSpecs />
+        <CodeDeepDive />
+        <PIDControlSection />
+        <Strategy />
+        <EngineeringProcess />
         <Evolution />
+        <Instructions />
         <OpenSource />
+        <RobotInAction />
       </main>
       <Footer />
     </div>

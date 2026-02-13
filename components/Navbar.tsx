@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
     { name: 'Folyamat', href: '#process' },
     { name: 'Robot', href: '#robot' },
     { name: 'Kód', href: '#code' },
+    { name: 'PID', href: '#pid' },
     { name: 'Stratégia', href: '#strategy' },
     { name: 'Evolúció', href: '#evolution' },
     { name: 'Open Source', href: '#opensource' },

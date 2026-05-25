@@ -6,16 +6,25 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "video:compositions": "remotion compositions remotion/index.ts",
+    "video:studio": "remotion studio remotion/index.ts",
+    "video:capture": "node scripts/capture-site-showreel.mjs",
+    "video:render:long": "remotion render remotion/index.ts FabtonSiteShowcaseLong out/fabton-site-showcase-long.mp4 --codec=h264 --concurrency=8",
+    "video:render:short": "remotion render remotion/index.ts FabtonSiteShowcaseShort out/fabton-site-showcase-short.mp4 --codec=h264 --concurrency=8",
+    "video:all": "npm run video:capture && npm run video:render:long && npm run video:render:short"
   },
   "dependencies": {
-    "react-dom": "^19.2.3",
+    "lucide-react": "^0.561.0",
     "react": "^19.2.3",
-    "lucide-react": "^0.561.0"
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
+    "@remotion/cli": "^4.0.422",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "playwright": "^1.58.2",
+    "remotion": "^4.0.422",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import EngineeringProcess from './components/EngineeringProcess';
@@ -15,6 +16,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
+    <LanguageProvider>
     <div className="bg-black min-h-screen text-[#F5F5F7] font-sans selection:bg-[#2997FF] selection:text-white">
       <Navbar />
       <main>
@@ -32,6 +34,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
     </div>
+    </LanguageProvider>
   );
 };
 
